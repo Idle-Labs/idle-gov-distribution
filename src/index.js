@@ -65,7 +65,7 @@ const balances_blocks = {
 };
 
 // Customizable variables
-const startBlock = null;//10093093;
+const startBlock = null;;
 const endBlock = 11174327;
 // 4% of total supply
 const govTokensV1 = 20000; // Tokens to be distributed for IdleV1
@@ -220,7 +220,7 @@ const sorted_accounts_tokens = Object.keys(accounts_tokens)
 // Create sorted CSV
 sorted_accounts_tokens.forEach( t => {
   const normalizedTokenAmount = t[1].times(1e18).integerValue(BigNumber.ROUND_FLOOR).toFixed();
-  console.log(t[0]+','+normalizedTokenAmount);
+  console.log('0x'+t[0]+','+normalizedTokenAmount);
 });
 
 // console.log(firstBlock,lastBlock,tokensPerBlock,totalGovTokensTest.toString(),accounts_tokens);
