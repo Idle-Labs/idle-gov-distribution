@@ -68,8 +68,9 @@ const balances_blocks = {
 const startBlock = null;;
 const endBlock = 11174327;
 // 4% of total supply
-const govTokensV1 = 20000; // Tokens to be distributed for IdleV1
-const govTokensV2V4 = 500000-govTokensV1; // Tokens to be distributed from IdleV2 to IdleV4
+const totGovTokens = 520000; // Total tokens to be distributes from V1 to V4
+const govTokensV1 = 20000; // Tokens to be distributed for V1
+const govTokensV2V4 = totGovTokens-govTokensV1; // Tokens to be distributed from V2 to V4
 
 let all_blocks = [];
 Object.keys(balances_blocks).forEach( token => {
