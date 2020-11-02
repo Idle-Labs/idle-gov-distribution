@@ -219,9 +219,9 @@ const sorted_accounts_tokens = Object.keys(accounts_tokens)
 // console.log('TOTAL $IDLE DISTRIBUTED:',totalGovTokensTest.times(1e18).integerValue(BigNumber.ROUND_FLOOR).toFixed());
 
 // Create sorted CSV
+console.log('address,rewards');
 sorted_accounts_tokens.forEach( t => {
-  const normalizedTokenAmount = t[1].times(1e18).integerValue(BigNumber.ROUND_FLOOR).toFixed();
-  console.log('0x'+t[0]+','+normalizedTokenAmount);
+  console.log('0x'+t[0]+','+t[1].toFixed(18));
 });
 
 // console.log(firstBlock,lastBlock,tokensPerBlock,totalGovTokensTest.toString(),accounts_tokens);
