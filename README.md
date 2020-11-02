@@ -11,4 +11,4 @@ yarn
 yarn start
 ```
 
-A file called token-distribution.csv containing the token distribution will be saved in the project directory.
+A file called token-distribution.csv containing the token distribution will be saved in the project directory, token addresses are lowercase.
